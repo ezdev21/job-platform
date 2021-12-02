@@ -18,6 +18,7 @@ class CreateEmploymentsTable extends Migration
             $table->foreignId('company_id');
             $table->foreignId('');
             $table->decimal('length');
+            $table->foreignId('proffesion_id');
             $table->timestamps();
         });
     }

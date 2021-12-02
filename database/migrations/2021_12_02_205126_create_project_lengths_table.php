@@ -15,6 +15,7 @@ class CreateProjectLengthsTable extends Migration
     {
         Schema::create('project_lengths', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->timestamps();
         });
     }
