@@ -15,6 +15,8 @@ class CreateEmploymentsTable extends Migration
     {
         Schema::create('employments', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('company_id');
+            $table->decimal('length');
             $table->timestamps();
         });
     }

@@ -15,6 +15,7 @@ class CreateWorksTable extends Migration
     {
         Schema::create('works', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('job_id');
             $table->timestamps();
         });
     }
