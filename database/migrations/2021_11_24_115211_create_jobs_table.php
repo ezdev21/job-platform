@@ -19,6 +19,11 @@ class CreateJobsTable extends Migration
             $table->longText('description');
             $table->foreignId('client_id');
             $table->foreignId('jobtype_id');
+            $table->foreignId('experience_type_id');
+            $table->foreignId('country_id');
+            $table->foreignId('city_id');
+            $table->foreignId('project_length_id');
+            $table->decimal('rate');
             $table->timestamps();
         });
     }
