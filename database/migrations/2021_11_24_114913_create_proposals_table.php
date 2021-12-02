@@ -15,6 +15,11 @@ class CreateProposalsTable extends Migration
     {
         Schema::create('proposals', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('profile_id');
+            $table->integer('connect');
+            $table->decimal('rate');
+            $table->longText('cover_letter');
+            $table->json('attachments');
             $table->timestamps();
         });
     }
