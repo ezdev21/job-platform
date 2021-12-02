@@ -15,6 +15,9 @@ class CreateReportsTable extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('job_id');
+            $table->string('type');
+            $table->longText('description');
             $table->timestamps();
         });
     }

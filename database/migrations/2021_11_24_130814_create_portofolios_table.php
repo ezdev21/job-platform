@@ -15,6 +15,13 @@ class CreatePortofoliosTable extends Migration
     {
         Schema::create('portofolios', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
+            $table->foreignId('category_id');
+            $table->foreignId('sub_category_id');
+            $table->string('title');
+            $table->longText('description');
+            $table->string('photo');
+            $table->string('link');
             $table->timestamps();
         });
     }

@@ -15,6 +15,9 @@ class CreateTalentTable extends Migration
     {
         Schema::create('talent', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->foreignId('category_id');
+            $table->foreignId('sub_category_id');
             $table->timestamps();
         });
     }
