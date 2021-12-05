@@ -12,15 +12,21 @@
     "devDependencies": {
         "axios": "^0.21",
         "bootstrap": "^4.6.0",
+        "deepmerge": "^4.2.2",
         "jquery": "^3.6",
-        "laravel-mix": "^6.0.6",
+        "laravel-mix": "^6.0.39",
         "lodash": "^4.17.19",
         "popper.js": "^1.16.1",
         "postcss": "^8.1.14",
         "resolve-url-loader": "^3.1.2",
-        "sass": "^1.32.11",
-        "sass-loader": "^11.0.1",
+        "sass": "^1.32.13",
+        "sass-loader": "^11.1.1",
         "vue": "^2.6.12",
         "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "case-sensitive-paths-webpack-plugin": "^2.4.0",
+        "vuetify": "^2.6.1",
+        "vuetify-loader": "^2.0.0-alpha.8"
     }
 }
