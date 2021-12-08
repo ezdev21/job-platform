@@ -1,0 +1,34 @@
+<template>
+ <div>
+   <div v-for="employment in certeficates" :key="employment.id">
+     <edit-employment-component/>
+     <remove-employment-component/>
+   </div>
+ </div>
+</template>
+<script>
+export default {
+ props:{
+  user:{
+   type:Object,
+   required:true
+  }
+ },
+ data(){
+  return{
+   certeficates:[]
+  }
+ },
+ mounted(){
+  this.getEmploymentHistory();
+ },
+ methods:{
+  getEmploymentHistory(){
+   axios.get('/employment/all',{params:{user:this.user}})
+   .then(res=>{
+    this.certeficates=res.data.certeficates;
+   })
+  }
+ }
+}
+</script>
