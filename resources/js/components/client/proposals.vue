@@ -1,0 +1,43 @@
+<template>
+ <div>
+  <div v-for="proposal in proposals" :key="proposal.id">
+   <div>
+    
+   </div>
+  </div>
+ </div>
+</template>
+<script>
+export default {
+ props:{
+  client:{
+   type:Object,
+   required:true
+  },
+  user:{
+   type:Object,
+   required:true
+  },
+  job:{
+   type:Object,
+   required:true
+  }
+ },
+ data(){
+  return{
+   proposals:[]
+  }
+ },
+ mounted(){
+  this.getProposals();
+ },
+ methods:{
+  getProposals(){
+   axios.get('/proposals/all',{job:this.job})
+   .then(res=>{
+    this.proposals=res.data.proposals;
+   })
+  }
+ }
+}
+</script>
