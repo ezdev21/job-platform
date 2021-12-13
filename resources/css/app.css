@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-first{
+  color: #249f9c;
+}
+.bg-first{
+  background-color: #249f9c;
+}
+.bg-second{
+  background-color: #085a57;
+}
