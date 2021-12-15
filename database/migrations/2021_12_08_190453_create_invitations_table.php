@@ -17,6 +17,7 @@ class CreateInvitationsTable extends Migration
             $table->id();
             $table->foreignId('client_id');
             $table->foreignId('user_id');
+            $table->foreignId('job_id');
             $table->timestamps();
         });
     }
