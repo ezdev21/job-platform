@@ -15,6 +15,9 @@ class CreateMilestonesTable extends Migration
     {
         Schema::create('milestones', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('job_id');
+            $table->foreignId('user_id');
+            $table->string('description');
             $table->timestamps();
         });
     }
