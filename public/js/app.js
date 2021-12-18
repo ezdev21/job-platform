@@ -37781,17 +37781,21 @@ var render = function () {
         _c(
           "svg",
           {
-            staticClass: "bi bi-grid-3x3-gap-fill w-14 text-white",
+            staticClass: "text-first w-12",
             attrs: {
               xmlns: "http://www.w3.org/2000/svg",
-              fill: "currentColor",
-              viewBox: "0 0 16 16",
+              fill: "none",
+              viewBox: "0 0 24 24",
+              stroke: "currentColor",
             },
           },
           [
             _c("path", {
               attrs: {
-                d: "M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z",
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round",
+                "stroke-width": "2",
+                d: "M4 6h16M4 12h16M4 18h16",
               },
             }),
           ]
@@ -37808,7 +37812,7 @@ var staticRenderFns = [
     return _c("form", { attrs: { action: "" } }, [
       _c("input", {
         staticClass:
-          "text-xl text-first w-full text-xl p-1.5 rounded-lg border-2 border-gray-300 w-96",
+          "text-xl text-first text-xl p-2 rounded-lg border-2 border-gray-300 w-96",
         attrs: { type: "text", required: "", placeholder: "search jobs" },
       }),
     ])
@@ -37825,7 +37829,7 @@ var staticRenderFns = [
             "flex items-center text-xl font-medium text-white space-x-4",
         },
         [
-          _c("li", [_vm._v("Profile")]),
+          _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("Profile")])]),
           _vm._v(" "),
           _c("div", { staticClass: "hidden" }, [
             _c("ul", [
@@ -37843,7 +37847,7 @@ var staticRenderFns = [
             ]),
           ]),
           _vm._v(" "),
-          _c("li", [_vm._v("Find Work")]),
+          _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("Find Work")])]),
           _vm._v(" "),
           _c("div", { staticClass: "hidden" }, [
             _c("ul", [

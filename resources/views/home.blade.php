@@ -1,21 +1,21 @@
 @extends('layouts.app')
 @section('content')
-<div class="flex my-3 md:my-5 w-full md:w-5/6 md:mx-auto bg-blue-100">
+<div class="flex my-3 md:my-5 w-full md:w-11/12 md:mx-auto">
   <div class="w-1/4">
    <search-job-component/>
   </div> 
    <div class="w-1/2">
-    <h1>recommended</h1>
+    <h1 class="text-xl font-medium mx-2">Recommended</h1>
     <div>
       @foreach ($jobs as $job)
-       <div>
-        <h1>{{$job->title}}</h1>
-        <div class="flex">
+       <div class="bg-white p-2 m-2 rounded-xl">
+        <h1 class="text-xl font-medium">{{$job->title}}</h1>
+        <div class="flex my-2">
          <p>{{$job->type}}</p>
          <p>{{$job->experience->type}}</p>
          <p></p>
         </div>
-        <p>{{$job->description}}</p>
+        <p class="text-base">{{$job->description}}</p>
         <div class="flex"></div> 
        </div>   
       @endforeach
