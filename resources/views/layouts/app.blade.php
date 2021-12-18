@@ -24,6 +24,10 @@
   <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
     @csrf
   </form>
+  <form action="{{route('search.job')}}" id="search-form" class="hidden">
+    @csrf
+    <input type="text" name="searchQuery" id="searchQuery">
+  </form>
   <div>
     <navigation-component/>  
   </div>

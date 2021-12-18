@@ -22,6 +22,14 @@ Route::prefix('job')->group(function(){
   Route::delete('delete/{id}',[JobController::class,'destroy']);
 });
 
+Route::prefix('search')->group(function(){
+  Route::get('jobs',[JobController::class,'searchJob'])->name('search.job');
+  Route::get('talent',[JobController::class,'searchTalent']);
+  Route::post('tag',[JobController::class,'searchTag']);
+  Route::patch('skill',[JobController::class,'searchSkill']);
+  Route::delete('freelancer',[JobController::class,'searchFreelancer']);
+});
+
 Route::prefix('proposal')->group(function(){
     Route::get('proposals',[ProposalController::class,'index']);
     Route::get('create',[ProposalController::class,'create']);

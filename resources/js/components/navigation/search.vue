@@ -15,7 +15,10 @@
    
   },
   methods:{
-
+    search(){
+     document.getElementById('searchQuery').value=this.query;
+     document.getElementById('search-form').submit();
+    }
   }
  }
 </script>
