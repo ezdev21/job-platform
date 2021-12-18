@@ -21,6 +21,10 @@ window.Vue = require('vue').default;
 
 Vue.component('navigation-component', require('./components/navigation/navigation.vue').default);
 Vue.component('search-job-component', require('./components/navigation/search.vue').default);
+Vue.component('report-job-component', require('./components/job/flag.vue').default);
+Vue.component('save-job-component', require('./components/job/save.vue').default);
+//Vue.component('-job-component', require('./components/.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

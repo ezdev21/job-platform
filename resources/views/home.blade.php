@@ -13,10 +13,19 @@
         <div class="flex my-2">
          <p>{{$job->type}}</p>
          <p>{{$job->experience->type}}</p>
-         <p></p>
+         <p><save-job-component :user="{{auth()->user}}" :job="{{$job}}" /></p>
+         <p><report-job-component :user="{{auth()->user}}" :job="{{$job}}" /></p>
         </div>
         <p class="text-base">{{$job->description}}</p>
-        <div class="flex"></div> 
+        <div class="flex">
+         @foreach ($job->tags as $tag)
+          <button>{{$tag}}</button>   
+         @endforeach
+        </div> 
+        <div>
+          <p>proposals {{$job->proposals}}</p>
+          <p>{{$job->country}}</p>
+        </div>
        </div>   
       @endforeach
     </div>
