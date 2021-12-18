@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\SearchController;
 use App\Models\Job;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -23,11 +24,11 @@ Route::prefix('job')->group(function(){
 });
 
 Route::prefix('search')->group(function(){
-  Route::get('jobs',[JobController::class,'searchJob'])->name('search.job');
-  Route::get('talent',[JobController::class,'searchTalent']);
-  Route::post('tag',[JobController::class,'searchTag']);
-  Route::patch('skill',[JobController::class,'searchSkill']);
-  Route::delete('freelancer',[JobController::class,'searchFreelancer']);
+  Route::get('jobs',[SearchController::class,'searchJob'])->name('search.job');
+  Route::get('talent',[SearchController::class,'searchTalent']);
+  Route::post('tag',[SearchController::class,'searchTag']);
+  Route::patch('skill',[SearchController::class,'searchSkill']);
+  Route::delete('freelancer',[SearchController::class,'searchFreelancer']);
 });
 
 Route::prefix('proposal')->group(function(){
