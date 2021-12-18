@@ -2121,6 +2121,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     user: {
@@ -37728,96 +37730,152 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("nav", { staticClass: "flex items-between w-max mx-10" }, [
-      _c("div", { staticClass: "flex" }, [
+  return _c(
+    "div",
+    { staticClass: "bg-first text-white p-2 flex justify-evenly items-center" },
+    [
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex items-center space-x-4 text-xl font-medium text-white mx-3",
+        },
+        [
+          _c(
+            "svg",
+            {
+              staticClass: "h-12 w-12",
+              attrs: {
+                xmlns: "http://www.w3.org/2000/svg",
+                fill: "none",
+                viewBox: "0 0 24 24",
+                stroke: "currentColor",
+              },
+            },
+            [
+              _c("path", {
+                attrs: {
+                  "stroke-linecap": "round",
+                  "stroke-linejoin": "round",
+                  "stroke-width": "2",
+                  d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+                },
+              }),
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(0),
+        ]
+      ),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex space-x-4" }, [
+        _c("img", {
+          staticClass: "w-12 h-12 rounded-full",
+          attrs: {
+            src: "https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png",
+          },
+        }),
+        _vm._v(" "),
         _c(
           "svg",
           {
-            staticClass: "h-6 w-6",
+            staticClass: "bi bi-grid-3x3-gap-fill w-14 text-white",
             attrs: {
               xmlns: "http://www.w3.org/2000/svg",
-              fill: "none",
-              viewBox: "0 0 24 24",
-              stroke: "currentColor",
+              fill: "currentColor",
+              viewBox: "0 0 16 16",
             },
           },
           [
             _c("path", {
               attrs: {
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round",
-                "stroke-width": "2",
-                d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+                d: "M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z",
               },
             }),
           ]
         ),
-        _vm._v(" "),
-        _c("p", [_vm._v("home")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text", placeholder: "search" } }),
       ]),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div"),
-    ]),
-  ])
+    ]
+  )
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("form", { attrs: { action: "" } }, [
+      _c("input", {
+        staticClass:
+          "text-xl text-first w-full text-xl p-1.5 rounded-lg border-2 border-gray-300 w-96",
+        attrs: { type: "text", required: "", placeholder: "search jobs" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", [
-      _c("ul", [
-        _c("li", [_vm._v("profile")]),
-        _vm._v(" "),
-        _c("div", [
-          _c("ul", [
-            _c("li", [
-              _c("a", { attrs: { href: "" } }, [_vm._v("my profile")]),
+      _c(
+        "ul",
+        {
+          staticClass:
+            "flex items-center text-xl font-medium text-white space-x-4",
+        },
+        [
+          _c("li", [_vm._v("Profile")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "hidden" }, [
+            _c("ul", [
+              _c("li", [
+                _c("a", { attrs: { href: "" } }, [_vm._v("my profile")]),
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "" } }, [_vm._v("edit profile")]),
+              ]),
+              _vm._v(" "),
+              _c("li", [_c("a", { attrs: { href: "" } })]),
+              _vm._v(" "),
+              _c("li", [_c("a", { attrs: { href: "" } })]),
             ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "" } }, [_vm._v("edit profile")]),
-            ]),
-            _vm._v(" "),
-            _c("li", [_c("a", { attrs: { href: "" } })]),
-            _vm._v(" "),
-            _c("li", [_c("a", { attrs: { href: "" } })]),
           ]),
-        ]),
-        _vm._v(" "),
-        _c("li", [_vm._v("find work")]),
-        _vm._v(" "),
-        _c("div", [
-          _c("ul", [
-            _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("find work")])]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { attrs: { href: "" } }, [_vm._v("saved jobs")]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Find Work")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "hidden" }, [
+            _c("ul", [
+              _c("li", [
+                _c("a", { attrs: { href: "" } }, [_vm._v("find work")]),
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "" } }, [_vm._v("saved jobs")]),
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "" } }, [_vm._v("proposals")]),
+              ]),
+              _vm._v(" "),
+              _c("li", [_c("a", { attrs: { href: "" } })]),
             ]),
-            _vm._v(" "),
-            _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("proposals")])]),
-            _vm._v(" "),
-            _c("li", [_c("a", { attrs: { href: "" } })]),
           ]),
-        ]),
-        _vm._v(" "),
-        _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("my jobs")])]),
-        _vm._v(" "),
-        _c("div", [_c("ul", [_c("li")])]),
-        _vm._v(" "),
-        _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("reports")])]),
-        _vm._v(" "),
-        _c("div", [_c("ul", [_c("li")])]),
-        _vm._v(" "),
-        _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("messages")])]),
-        _vm._v(" "),
-        _c("div", [_c("ul", [_c("li")])]),
-      ]),
+          _vm._v(" "),
+          _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("My Jobs")])]),
+          _vm._v(" "),
+          _c("div", [_c("ul", [_c("li")])]),
+          _vm._v(" "),
+          _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("Reports")])]),
+          _vm._v(" "),
+          _c("div", [_c("ul", [_c("li")])]),
+          _vm._v(" "),
+          _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("Messages")])]),
+          _vm._v(" "),
+          _c("div", [_c("ul", [_c("li")])]),
+        ]
+      ),
     ])
   },
 ]
