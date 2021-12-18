@@ -41,6 +41,7 @@
            </ul>
          </div>
          <li><a href="">Messages</a></li>
+         <li><notification-component :user="user"/></li>
          <div>
            <ul>
             <li></li> 
