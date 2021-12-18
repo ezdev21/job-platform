@@ -24,11 +24,11 @@ Route::prefix('job')->group(function(){
 });
 
 Route::prefix('search')->group(function(){
-  Route::get('jobs',[SearchController::class,'searchJob'])->name('search.job');
-  Route::get('talent',[SearchController::class,'searchTalent']);
-  Route::post('tag',[SearchController::class,'searchTag']);
-  Route::patch('skill',[SearchController::class,'searchSkill']);
-  Route::delete('freelancer',[SearchController::class,'searchFreelancer']);
+  Route::get('job',[SearchController::class,'searchJob'])->name('search.job');
+  Route::get('talent',[SearchController::class,'searchTalent'])->name('search.talent');
+  Route::post('tag',[SearchController::class,'searchTag'])->name('search.tag');
+  Route::patch('skill',[SearchController::class,'searchSkill'])->name('search.skill');
+  Route::delete('freelancer',[SearchController::class,'searchFreelancer'])->name('search.freelancer');
 });
 
 Route::prefix('proposal')->group(function(){

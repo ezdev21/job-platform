@@ -5,82 +5,43 @@ namespace App\Http\Controllers;
 use App\Models\Search;
 use App\Http\Requests\StoreSearchRequest;
 use App\Http\Requests\UpdateSearchRequest;
+use App\Models\Job;
+use App\Models\Skill;
+use App\Models\Tag;
+use App\Models\Talent;
+use Illuminate\Http\Request;
 
 class SearchController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function searchJob(Request $request)
     {
-        //
+      $searchQuery=$request->searchQuery;
+      $jobs=Job::where('title','LIKE',"%${searchQuery}%");
+      return view('search',compact('jobs'));  
+    }
+    public function searchTalent(Request $request)
+    {
+      $searchQuery=$request->searchQuery;
+      $talents=Talent::where('title','LIKE',"%${searchQuery}%");
+      return view('search',compact('talents'));  
+    }
+    public function searchTag(Request $request)
+    {
+      $searchQuery=$request->searchQuery;
+      $tags=Tag::where('title','LIKE',"%${searchQuery}%");
+      return view('search',compact('tags'));  
+    }
+    public function searchSkill(Request $request)
+    {
+      $searchQuery=$request->searchQuery;
+      $skills=Skill::where('title','LIKE',"%${searchQuery}%");
+      return view('search',compact('skills'));  
+    }
+    public function searchFreelancer(Request $request)
+    {
+      $searchQuery=$request->searchQuery;
+      $freelancers=Freelancer::where('title','LIKE',"%${searchQuery}%");
+      return view('search',compact('freelancers'));  
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreSearchRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreSearchRequest $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Search  $search
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Search $search)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Search  $search
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Search $search)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateSearchRequest  $request
-     * @param  \App\Models\Search  $search
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateSearchRequest $request, Search $search)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Search  $search
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Search $search)
-    {
-        //
-    }
 }
