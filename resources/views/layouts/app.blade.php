@@ -25,7 +25,7 @@
     @csrf
   </form>
   <div>
-    <navigation-cmponent/>  
+    <navigation-component/>  
   </div>
   <main class="py-4">
     @yield('content')

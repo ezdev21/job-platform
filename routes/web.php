@@ -1,11 +1,13 @@
 <?php
 
 use App\Http\Controllers\JobController;
+use App\Models\Job;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
-    return view('home');
+  $jobs=Job::all();
+  return view('home',compact('jobs'));
 })->middleware('auth');
 
 Auth::routes();

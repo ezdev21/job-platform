@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-first">
    <nav class="flex items-between w-max mx-10">
      <div class="flex">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -11,7 +11,7 @@
      <div>
        <ul>
          <li>profile</li>
-         <div>
+         <div class="hidden">
            <ul>
             <li><a href="">my profile</a></li>
             <li><a href="">edit profile</a></li>
@@ -20,7 +20,7 @@
            </ul>
          </div>
          <li>find work</li>
-         <div>
+         <div class="hidden">
            <ul>
             <li><a href="">find work</a></li>
             <li><a href="">saved jobs</a></li>
