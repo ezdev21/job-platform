@@ -8,7 +8,7 @@
       </a>
      </div>
      <div>
-       <ul class="flex items-center text-xl font-medium text-white space-x-4">
+       <ul class="flex items-center text-xl font-medium text-white space-x-6">
          <li><a href="">Profile</a></li>
          <div class="hidden">
            <ul>
