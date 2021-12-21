@@ -3,9 +3,9 @@
 <div class="flex my-3 md:my-5 w-full md:w-11/12 md:mx-auto">
   <div class="w-1/4">
    <search-job-component/>
-  </div> 
+  </div>
    <div class="w-1/2">
-    <h1 class="text-xl font-medium mx-2">Recommended</h1>
+    <h1 class="text-2xl font-medium mx-2">jobs for you</h1>
     <div>
       @foreach ($jobs as $job)
        <div class="bg-white p-2 m-2 rounded-xl">
