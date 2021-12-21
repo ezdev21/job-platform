@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('content')
-<div class="flex my-3 md:my-5 w-full md:w-11/12 md:mx-auto">
-  <div class="w-1/4">
-   <search-job-component/>
-  </div>
-   <div class="w-1/2">
+<div class="flex space-x-5 my-3 md:my-5 w-full md:w-11/12 md:mx-auto">
+   <div class="w-3/4">
+    <div class="">
+      <search-job-component/>
+     </div>
     <h1 class="text-2xl font-medium mx-2">jobs for you</h1>
     <div>
       @foreach ($jobs as $job)
@@ -31,7 +31,7 @@
     </div>
    </div> 
    <div class="w-1/4">
-   
+    
    </div>  
 </div>
 @endsection
