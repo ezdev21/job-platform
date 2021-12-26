@@ -7,8 +7,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
+  $user=auth()->user();
   $jobs=Job::all();
-  return view('home',compact('jobs'));
+  return view('home',compact('jobs','user'));
 })->middleware('auth');
 
 Auth::routes();

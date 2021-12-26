@@ -23,7 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $user=auth()->user();
         $jobs=Job::all();
-        return view('home',compact('job'));
+        return view('home',compact('jobs','user'));
     }
 }

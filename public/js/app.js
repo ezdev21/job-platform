@@ -2296,6 +2296,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -38354,6 +38355,7 @@ var render = function () {
     _c(
       "form",
       {
+        staticClass: "flex",
         on: {
           submit: function ($event) {
             $event.preventDefault()
@@ -38367,25 +38369,31 @@ var render = function () {
             {
               name: "model",
               rawName: "v-model",
-              value: _vm.query,
-              expression: "query",
+              value: _vm.searchQuery,
+              expression: "searchQuery",
             },
           ],
           staticClass:
-            "text-xl text-first text-xl p-2 rounded-lg border-2 border-gray-300 w-full",
+            "text-first rounded-l-lg w-full p-2 text-lg lg:text-xl outline-none focus:border-2",
           attrs: { type: "text", required: "", placeholder: "search jobs" },
-          domProps: { value: _vm.query },
+          domProps: { value: _vm.searchQuery },
           on: {
             input: [
               function ($event) {
                 if ($event.target.composing) {
                   return
                 }
-                _vm.query = $event.target.value
+                _vm.searchQuery = $event.target.value
               },
-              _vm.filterCatgories,
+              _vm.filter,
             ],
           },
+        }),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "py-2 px-4 rounded-r-lg text-white bg-first text-xl lg:text-2xl",
+          attrs: { type: "submit", value: "search" },
         }),
       ]
     ),
