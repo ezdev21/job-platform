@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-200">
  <div id="app">
   <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
     @csrf

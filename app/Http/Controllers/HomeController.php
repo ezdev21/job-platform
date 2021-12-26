@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $jobs=Job::all();
+        return view('home',compact('job'));
     }
 }

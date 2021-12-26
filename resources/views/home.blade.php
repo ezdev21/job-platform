@@ -6,8 +6,8 @@
       <search-job-component/>
      </div>
     <div>
-      <h1 class="text-2xl font-medium mx-2">jobs for you</h1>
-      @foreach ($jobs as $job)
+      <h1 class="text-2xl font-medium my-2">jobs for you</h1>
+      @forelse ($jobs ?? '' as $job)
        <div class="bg-white p-2 m-2 rounded-xl">
         <h1 class="text-xl font-medium">{{$job->title}}</h1>
         <div class="flex my-2">
@@ -27,7 +27,9 @@
           <p>{{$job->country}}</p>
         </div>
        </div>   
-      @endforeach
+      @empty
+       <p class="text-2xl">sorry! no job found for you</p> 
+      @endforelse
     </div>
    </div> 
    <div class="w-1/4">
