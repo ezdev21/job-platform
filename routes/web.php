@@ -19,7 +19,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::prefix('job')->group(function(){
   Route::get('jobs',[JobController::class,'index']);
   Route::get('create',[JobController::class,'create']);
-  Route::post('store',[JobController::class,'store']);
+  Route::post('store',[JobController::class,'store'])->name('job.store');
   Route::patch('edit/{id}',[JobController::class,'edit']);
   Route::delete('delete/{id}',[JobController::class,'destroy']);
 });

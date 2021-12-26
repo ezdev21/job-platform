@@ -4,7 +4,7 @@
    <div class="w-3/4">
     <div class="my-3">
       <search-job-component/>
-     </div>
+    </div>
     <div class="bg-white p-2 rounded-lg">
       <h1 class="text-2xl font-medium my-2">jobs for you</h1>
       @forelse ($jobs as $job)
