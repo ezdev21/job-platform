@@ -7,11 +7,7 @@ from schemas import JobCreate, JobResponse
 
 Base.metadata.create_all(bind=engine)
 
-router = APIRouter(
-    prefix="/jobs",
-    tags=["Jobs"],
-)
-
+router = APIRouter()
 
 @router.get("/", response_model=list[JobResponse])
 def get_jobs(db: Session = Depends(get_db)):
