@@ -9,3 +9,4 @@ class Job(Base):
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String(200), nullable=False)
     description = Column(String, nullable=True)
+    status = Column(String(50), default="Open")

@@ -1,6 +1,34 @@
-/.idea
-/.vscode
-/client/node_modules
+# IDE
+/.idea/
+/.vscode/
+
+# Frontend
+/client/node_modules/
+
+# Backend environment
 /server/.env
-/server/__pycache__/
-/server/*.pyc
+
+# Python cache
+/server/**/__pycache__/
+/server/**/*.pyc
+/server/**/*.pyo
+/server/**/*.pyd
+
+# Python virtual environments
+/server/.venv/
+/server/venv/
+/server/env/
+
+# Testing / coverage
+/server/.pytest_cache/
+/server/.coverage
+/server/htmlcov/
+
+# Build / distribution
+/server/build/
+/server/dist/
+/server/*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
